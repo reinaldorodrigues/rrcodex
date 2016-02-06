@@ -38,3 +38,30 @@
     color: #2B6FB6;
     font-weight: bold;
 }
+.rrcodex .codephp-var{
+    color: #006505;
+    font-weight: bold;
+}
+.rrcodex .codephp-for{
+    color: #404040;
+    font-weight: bold;
+}
+.rrcodex .codephp-func{
+    color: #07526c;
+    font-weight: bold;
+}
+.rrcodex .codephp-echo{
+    color: #A7301F;
+    font-weight: bold;
+}
+.rrcodex .codephp-return{
+    color: #000000;
+    font-weight: bold;
+}
+
+
+
+
+
+
+

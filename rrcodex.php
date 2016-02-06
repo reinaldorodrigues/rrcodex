@@ -24,6 +24,15 @@ function rrcodex_shortcode($atts, $content = null){
     $content = str_replace("<br />","", $content);
     $content = str_replace("&lt;?php","<span class=\"codephp\">&lt;?php</span>", $content);
     $content = str_replace("?&gt;","<span class=\"codephp\">?&gt;</span>", $content);
+    $content = str_replace('echo','<span class="codephp-echo">echo</span>', $content);
+    $content = str_replace('return','<span class="codephp-return">return</span>', $content);
+    
+    
+    $content = preg_replace('/(\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)/', '<span class="codephp-var"> \\1</span>', $content);
+    $content = preg_replace('/(for)/', '<span class="codephp-for"> \\1 </span>', $content);
+    $content = preg_replace('/(function)/', '<span class="codephp-for"> \\1 </span>', $content);
+    $content = preg_replace('/(.*[\(|\)])/', '<span class="codephp-func"> $0 </span>', $content);
+    
     
     $a = 1;
     $i = 1;
