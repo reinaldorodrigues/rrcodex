@@ -52,15 +52,14 @@ function rrcodex_shortcode($atts, $content = null){
     $html .= '</tbody>'."\n";
     $html .= '</table>'."\n";
     $content = $html;
-    return '<div class="rrcodex">'."\n".$content.'...</div>'."\n";
+    return '<div class="rrcodex">'."\n".$content.'</div>'."\n";
 }
 
 
 add_shortcode('rrcodex', 'rrcodex_shortcode');
 
 
-// Register the style like this for a plugin:
-wp_register_style( 'rrcodex-style', plugins_url( '/css/rrcodex.css', __FILE__ ), array(), '20120208', 'all' );
+wp_register_style( 'rrcodex-style', plugins_url( '/css/rrcodex.css', __FILE__ ), array(), time(), 'all' );
     
-// For either a plugin or a theme, you can then enqueue the style:
+
 wp_enqueue_style( 'rrcodex-style' );
