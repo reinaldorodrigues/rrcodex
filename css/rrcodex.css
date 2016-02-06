@@ -1,0 +1,22 @@
+.rrcodex{
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #F0F0EE;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+.rrcodex .table-rrcodex{
+    float: left;
+    width: 100%;
+    border: none;
+    padding: 0px;    
+    margin: 0px;
+    color: #006505; 
+    
+}
+.rrcodex .table-rrcodex td{
+    
+}
