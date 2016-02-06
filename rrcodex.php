@@ -9,10 +9,6 @@ Author URI:  http://www.reinaldorodrigues.com.br/sobre/
 License: GPLv2
 */
 
-
-// https://github.com/birgire/wp-table-shortcode/blob/master/wp-table-shortcode.php
-
-
 function rrcodex_shortcode($atts, $content = null){
     
    
